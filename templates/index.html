@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Spell Check 
+{% endblock %}
+
+{% block main %}
+
+<title>Spell Check</title>
+
+
+    <br><br>
+    <form action="/results" method="POST">
+        <h5>Welcome to Spell Check!</h5>
+        <div class="container">
+            <textarea class="form-control" name="input" placeholder="Type Words Here..."></textarea>
+        </div>
+        <div class="container">
+            <button class="btn btn-primary" type="submit">Check Spelling</button>
+        </div>
+    </form>
+
+
+{% endblock %}

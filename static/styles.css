@@ -1,0 +1,7 @@
+h5{
+    text-align: center;
+}
+#misspelled li{
+    display: block;
+    color: green;
+}

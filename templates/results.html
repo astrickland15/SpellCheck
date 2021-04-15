@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Spell Check Results
+{% endblock %}
+
+{% block main %}
+
+  <!-- <form action="/results" method="GET"></form> -->
+  <p>Mis-spelled Words:</p>  
+  {% for words in misspelled_words %}
+  <ul id="misspelled">
+    <li>{{words}}</li>
+
+  </ul>
+
+  
+  
+    {% endfor %}
+    
+
+
+{% endblock %}
